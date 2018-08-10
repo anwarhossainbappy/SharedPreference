@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/usernameId"
+        android:textSize="17sp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter UserName" />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/passwordId"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="15dp"
+            android:id="@+id/savebuttonId"
+            android:text="Save data"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/loadbuttonId"
+            android:text="Load Data"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/resultshow"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
